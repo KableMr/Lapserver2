@@ -1,0 +1,41 @@
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-row-normal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* começo modal*/
+#modal{
+    -webkit-box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.24);
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    top: 100px;
+    right: 0px;
+    width: 400px;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.24);
+}
+/*fim modal*/

@@ -1,0 +1,46 @@
+#developer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0A0F14;
+
+}
+#developer_master{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#developer_master ul{
+    list-style: none;
+    width: 400px;
+}
+#developer_master ul li > h1{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 300;
+    border-bottom: 2px solid #FF6C3C;
+}
+#developer_master ul li{
+    padding: 10px;
+}
+#developer_master ul li a{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    color: gray;
+    text-decoration: none;
+}
+#developer_master ul li a:hover{
+    text-decoration: underline;
+}
+#main_footer{
+    background-color: #0A0F14;
+    padding: 10px;
+}
+.content{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: white;
+}

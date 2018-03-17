@@ -1,0 +1,108 @@
+/*início planos*/
+#planos{
+    width: 100%;
+    padding: 30px;
+    background-color: #11161A;
+}
+#planos-conteudos{
+    width: 60%;
+    margin: 20px;
+}
+.planos-item{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    -webkit-box-shadow: 4px 1px 4px 0px rgba(0,0,0,0.24);
+}
+.plano-title{
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+.valido{
+    font-size: 1.23em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: green;
+}
+.check_valido{
+    font-size: 1.23em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: green;
+}
+.planos-item > table{
+    width: 100%;
+}
+.planos-item table > tr{
+    padding: 10px;
+}
+.planos-item table tr > td{
+    padding: 5px;
+}
+.planos-item table tr td > span{
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+.assine{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+
+}
+.assine > a{
+    width: 10px;
+    padding: 20px;
+    background-color: #070316;
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+.assine > a:hover{
+    text-decoration: none;
+    color: white;
+}
+#opcoe{
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+#opcoe-container{
+    width: 80%;
+
+}
+.opcao-item{
+    padding: 60px 150px;
+
+}
+.opcao-item > span{
+    color: white;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+#opcao-profissional{
+    border-bottom: 15px solid #FFAC09;
+}
+#opcao-profissional span > i{
+    color: #FFAC09;
+}
+#opcao-empresa{
+    border-bottom: 15px solid #9FE790;
+}
+#opcao-empresa span > i{
+    color:#9FE790;
+}
+#opcao-contrato{
+    border-bottom: 15px solid #9E6CDC;
+}
+#opcao-contrato span > i{
+    color: #9E6CDC;
+}

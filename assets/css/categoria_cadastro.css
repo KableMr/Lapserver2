@@ -1,0 +1,60 @@
+/*categoria*/
+#categoria-container{
+    width: 100%;
+    padding: 10px;
+}
+#cat-title{
+    width: 100%;
+}
+#cat-title > span{
+    font-size: 2.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+
+}
+#cat-body{
+    width: 80%;
+
+}
+#cat-body > div{
+    border: 1.4px solid #6494C2;
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cat-body div > span{
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+}
+#cat-body div > img{
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-bottom:8px;
+}
+#cat-body div > a{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    border-top: 1.4px solid #6494C2;
+    padding:8px;
+    -webkit-transition:.4s ease-in-out;
+
+
+}
+#cat-body div > a:hover{
+    -webkit-box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.24);
+    -webkit-transition:.4s ease-in-out;
+    text-decoration: none;
+    background-color: #6494C2;
+    color: white;
+
+}
+/*fim categoria*/

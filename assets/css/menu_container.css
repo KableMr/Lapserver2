@@ -1,0 +1,120 @@
+.text-defull{
+    font-family: 'Open sans', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: #FF8F3F;
+    
+}
+.text-defull:hover{
+    text-decoration: none;
+    color: #FF8F3F;
+}
+
+/*menu container : style*/
+
+.lista{
+    list-style: none;
+}
+#main-header{
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.24);
+}
+#logo{
+    width: 20%;
+    padding: 10px;
+    
+}
+#logo span a > img{
+    width: 140px;
+    height: 110px;
+}
+/*busca start*/
+#form-body{
+    width: 600px;    
+    padding: 20px;
+}
+#form-body > input[id='pesquisa']{
+    width: 400px;
+    border: none;
+    border-radius: 2px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24);
+    transition: .4s ease-in-out;
+}
+#form-body > input[id='pesquisa']:focus{
+    outline: none;
+    transition: .4s ease-in-out;
+    width: 430px;
+}
+#btn-buscar{
+    padding: 15px 30px;
+    background-color: #FF716A;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    border: none;
+    border-radius: 2px;
+}
+
+/*busca end*/
+
+#sign{
+    width: 200px;
+}
+#sign ul li a{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: black;
+}
+#sign ul li a:hover{
+    text-decoration: none;
+}
+#cadastro{
+    padding: 15px 20px;
+    background-color: #7EADE6;
+    border-radius: 3px;
+    color: white;
+}
+/*menu normal*/
+#menu_normal{
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.03);
+}
+#menu_normal > ul{
+    list-style: none;
+    
+}
+#menu_normal ul li > a{
+    padding:10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15em;
+    font-weight: 400;
+    color: black;
+    transition: .2s ease-in-out;
+}
+#menu_normal ul li > a:hover{
+text-decoration: none;
+transition: .2s ease-in-out;
+}
+/*end menu normal*/
+/*menu nav*/
+#menu-nav{
+    cursor: pointer;
+    padding-left: 10px;
+    color: gray;
+    font-size: 1.55em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+/*end menu nav*/
