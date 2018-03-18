@@ -28,6 +28,10 @@
     <link rel="icon" href="../assets/img/logo_servicos02.png">
     <meta name="google-signin-client_id"
           content="383860740692-qfk6eu79i39r4ver50sine807vr0moqp.apps.googleusercontent.com">
+    <script>
+        var w = window.innerWidth;
+        alert(w);
+    </script>
 </head>
 
 <body>

@@ -12,7 +12,7 @@
 }
 #developer_master ul{
     list-style: none;
-    width: 400px;
+    width: 27.758501040943789%;
 }
 #developer_master ul li > h1{
     padding: 10px;
@@ -43,4 +43,16 @@
     font-size: 1em;
     font-weight: 400;
     color: white;
+}
+@media (max-width: 1160px){
+    #developer_master ul {
+        width: 33%;
+
+    }
+}
+@media (max-width: 876px){
+    #developer_master ul {
+        width: 100%;
+
+    }
 }

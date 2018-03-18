@@ -1,16 +1,15 @@
 /*início planos*/
 #planos{
     width: 100%;
-    padding: 30px;
+    padding: 2.081887578070784%;
     background-color: #11161A;
 }
 #planos-conteudos{
-    width: 60%;
-    margin: 20px;
+    width: 80%;
 }
 .planos-item{
-    width: 400px;
-    height: 400px;
+    margin-top: 40px;
+    width: 40.758501040943789%;
     padding: 20px;
     background-color: white;
     -webkit-box-shadow: 4px 1px 4px 0px rgba(0,0,0,0.24);
@@ -68,6 +67,7 @@
     text-decoration: none;
     color: white;
 }
+/*opção*/
 #opcoe{
     position: relative;
     top: 30px;
@@ -75,17 +75,16 @@
 }
 #opcoe-container{
     width: 80%;
-
 }
 .opcao-item{
-    padding: 60px 150px;
+    padding: 4.163775156141568% 10.409437890353921%;
 
 }
 .opcao-item > span{
     color: white;
     font-family: 'Open sans', sans-serif;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 #opcao-profissional{
@@ -105,4 +104,31 @@
 }
 #opcao-contrato span > i{
     color: #9E6CDC;
+}
+@media (max-width: 839px){
+    #planos-conteudos{
+        width: 100%;
+    }
+    .planos-item{
+        width: 40%;
+    }
+    .planos-item table tr td > span{
+        font-size: 1em;
+
+    }
+}
+@media (max-width: 634px){
+    .planos-item{
+        width: 100%;
+    }
+
+    .planos-item table tr td > span{
+        font-size: 1.25em;
+
+    }
+}
+@media (max-width: 400px){
+    #opcoe-container{
+        width: 65%;
+    }
 }

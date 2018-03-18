@@ -35,34 +35,53 @@ if (isset($_GET['opcao']) && !empty($_GET['opcao'])) {
     <link rel="icon" href="../assets/img/logo_servicos02.png">
     <meta name="google-signin-client_id"
           content="383860740692-qfk6eu79i39r4ver50sine807vr0moqp.apps.googleusercontent.com">
+    <style>
+        #user_cadastro{
+            padding: 20px;
+        }
+        #user_container_main > span{
+            padding: 10px;
+            font-family: 'Open sans', sans-serif;
+            font-size: 2em;
+            font-weight: 300;
+            color: rgba(0,0,0,0.5);
+        }
+        .label_cadastro{
+            padding: 10px;
+            font-family: 'Open sans', sans-serif;
+            font-size: 1.25em;
+            font-weight: 400;
+            color: rgba(0,0,0,0.7);
+        }
+    </style>
 </head>
 <body>
 <?php include('menu_container.php'); ?>
 <!-- Corpo da página de cadastro -->
 <main>
-    <section>
-        <article>
-            <h1>Quem você é?</h1>
-            <form>
-                <table>
-                    <tr>
-                        <td><input type="radio" name="opcao" class="radio" id="profissional" value="profissional"
-                            ></td>
-                        <td><label for="profissional">Profissional</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" name="opcao" class="radio" id="empresa" value="empresa"></td>
-                        <td><label for="empresa">Empresa</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" name="btnCadastro" class="btn btn-primary" value="Continunar"></td>
-                    </tr>
-                </table>
-            </form>
+    <section id="user_cadastro" class="flex-row">
+        <article id="user_container_main" class="flex-column">
+            <span id="title">Quem é você?</span>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="opcao" id="profissional" value="profissional"></td>
+                            <td><label class="label_cadastro" for="profissional">Profissional</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="opcao" id="empresa" value="empresa"></td>
+                            <td><label class="label_cadastro" for="empresa">Empresa</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="btnCadastro" class="btn btn-primary" value="Continunar"></td>
+                        </tr>
+                    </table>
+                </form>
+
         </article>
     </section>
 </main>
-<?php include('planos.php');?>
+<?php include('planos.php'); ?>
 <?php include('rodape.php'); ?>
 </body>
 </html>

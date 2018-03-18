@@ -1,7 +1,7 @@
 /*categoria*/
 #categoria-container{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
 }
 #cat-title{
     width: 100%;
@@ -19,7 +19,7 @@
 }
 #cat-body > div{
     border: 1.4px solid #6494C2;
-    width: 330px;
+    width: 30.288688410825815%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@
     color: rgba(0,0,0,0.5);
 }
 #cat-body div > img{
+    padding: 10px;
     cursor: pointer;
     width: 100px;
     height: 100px;
@@ -58,3 +59,18 @@
 
 }
 /*fim categoria*/
+@media (max-width: 1055px){
+   #cat-body{
+       width: 100%;
+   }
+}
+@media (max-width: 790px){
+    #cat-body > div{
+        width: 48%;
+    }
+}
+@media (max-width: 499px){
+    #cat-body > div{
+        width: 100%;
+    }
+}

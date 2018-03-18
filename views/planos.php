@@ -7,7 +7,7 @@
             <span class="plano-title">Plano Comum</span>
             <span class="preco">12x de<strike>R$15,99</strike> por <span class="valido"> R$8,99</span></span>
             <span>(ou à vista <strike>R$ 191,88</strike> R$107.88)</span>
-            <table>
+            <table class="flex-column">
                 <tr>
                     <td><i class="fa fa-check-circle check_valido"></i></td>
                     <td><span>Divuldação de Serviços</span></td>
@@ -31,7 +31,7 @@
             <span class="plano-title">Plano Premium</span>
             <span class="preco">12x de <strike>R$25,99</strike> por <span class="valido"> R$10,99</span></span>
             <span>(ou à vista <strike>R$ 311.88</strike> R$131.88)</span>
-            <table>
+            <table class="flex-column">
                 <tr>
                     <td><i class="fa fa-check-circle check_valido"></i></td>
                     <td><span>Divuldação de Serviços</span></td>

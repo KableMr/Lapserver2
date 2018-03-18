@@ -1,39 +1,50 @@
-.text-defull{
+.text-defull {
     font-family: 'Open sans', sans-serif;
     font-size: 2em;
     font-weight: 400;
     color: #FF8F3F;
-    
+
 }
-.text-defull:hover{
+
+.text-defull:hover {
     text-decoration: none;
     color: #FF8F3F;
 }
 
 /*menu container : style*/
 
-.lista{
+.lista {
     list-style: none;
 }
-#main-header{
+
+#main-header {
     width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,0.24);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
-#logo{
-    width: 20%;
-    padding: 10px;
-    
+
+#logo {
+    width: 25%;
+    padding: 20px;
+
 }
+
+/*
 #logo span a > img{
     width: 140px;
     height: 110px;
 }
+*/
 /*busca start*/
-#form-body{
-    width: 600px;    
+#search {
+    width: 43%;
+}
+
+#form-body {
+    width: 100%;
     padding: 20px;
 }
-#form-body > input[id='pesquisa']{
+
+#form-body > input[id='pesquisa'] {
     width: 400px;
     border: none;
     border-radius: 2px;
@@ -43,15 +54,17 @@
     font-size: 1em;
     font-weight: 400;
     color: black;
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.24);
     transition: .4s ease-in-out;
 }
-#form-body > input[id='pesquisa']:focus{
+
+#form-body > input[id='pesquisa']:focus {
     outline: none;
     transition: .4s ease-in-out;
     width: 430px;
 }
-#btn-buscar{
+
+#btn-buscar {
     padding: 15px 30px;
     background-color: #FF716A;
     color: white;
@@ -64,52 +77,94 @@
 }
 
 /*busca end*/
-
-#sign{
+.pesquisa{
+    display: none;
+}
+#sign {
     width: 200px;
 }
-#sign ul li a{
+
+#sign ul li a {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
     font-weight: 400;
     color: black;
 }
-#sign ul li a:hover{
+
+#sign ul li a:hover {
     text-decoration: none;
 }
-#cadastro{
+
+#cadastro {
     padding: 15px 20px;
     background-color: #7EADE6;
     border-radius: 3px;
     color: white;
 }
+
 /*menu normal*/
-#menu_normal{
+#menu_normal {
     display: none;
     width: 100%;
     padding: 20px;
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(0, 0, 0, 0.03);
 }
-#menu_normal > ul{
+
+#menu_normal > ul {
     list-style: none;
-    
+
 }
-#menu_normal ul li > a{
-    padding:10px;
+
+#menu_normal ul li > a {
+    padding: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.15em;
-    font-weight: 400;
+    font-weight: 300;
     color: black;
     transition: .2s ease-in-out;
 }
-#menu_normal ul li > a:hover{
-text-decoration: none;
-transition: .2s ease-in-out;
+
+#menu_normal ul li > a:hover {
+    text-decoration: none;
+    transition: .2s ease-in-out;
 }
+
 /*end menu normal*/
+/*comeco menu mobile*/
+#menu-mobile {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+#menu-mobile-itens > ul {
+    list-style: none;
+
+}
+#menu-mobile-itens ul li{
+    width: 100%;
+    padding: 20px 20px;
+    border-bottom: 1px solid gray;
+}
+#menu-mobile-itens ul li > a {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    transition: .2s ease-in-out;
+}
+
+#menu-mobile ul li > a:hover {
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+/*fim menu mobil*/
 /*menu nav*/
-#menu-nav{
+#menu-nav {
     cursor: pointer;
     padding-left: 10px;
     color: gray;
@@ -117,4 +172,59 @@ transition: .2s ease-in-out;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
+#menu-nav-mobile {
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
+    color: gray;
+    font-size: 1.55em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*end menu nav*/
+@media (max-width: 965px) {
+    #search {
+        display: none;
+    }
+    .pesquisa{
+        display: block;
+    }
+    #logo {
+        width: 50%;
+        padding: 20px;
+    }
+}
+@media (max-width: 644px){
+    .text-defull{
+        font-size: 1.75em;
+    }
+    #menu_normal ul li > a{
+        font-size: 1em;
+        padding: 5px;
+    }
+}
+@media (max-width: 618px){
+    .text-defull{
+        font-size: 1.25em;
+    }
+    #menu-nav-mobile{
+        display: block;
+    }
+    #menu-nav{
+        display: none;
+    }
+    #sign{
+        display: none;
+    }
+    #logo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #pai-menu-normal{
+        display: none;
+    }
+
+}
