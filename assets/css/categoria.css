@@ -1,3 +1,4 @@
+
 /*categoria*/
 #categoria-container{
     width: 100%;
@@ -5,18 +6,19 @@
 }
 #cat-title{
     width: 100%;
+
 }
 #cat-title > span{
     font-size: 2.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: rgba(0,0,0,0.5);
-
+    color: rgba(0,0,0,0.6);
 }
+
 #cat-body{
     width: 80%;
-
 }
+
 #cat-body > div{
     border: 1.4px solid #6494C2;
     width: 30.288688410825815%;
@@ -30,7 +32,7 @@
     font-size: 2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.6);
 }
 #cat-body div > img{
     padding: 10px;
@@ -72,5 +74,8 @@
 @media (max-width: 499px){
     #cat-body > div{
         width: 100%;
+    }
+    #categoria-container{
+        padding: 10px;
     }
 }

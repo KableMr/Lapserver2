@@ -52,10 +52,11 @@
     transition: .4s ease-in-out;
     width: 430px;
 }
-#btn-buscar{
+#btn-buscar {
+    position: relative;
+    right: 120px;
     padding: 15px 30px;
-    background-color: #FF716A;
-    color: white;
+    color: #152737;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
@@ -63,7 +64,6 @@
     border: none;
     border-radius: 2px;
 }
-
 /*busca end*/
 
 #sign{

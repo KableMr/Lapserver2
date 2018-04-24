@@ -1,6 +1,5 @@
 <?php
 session_start();
-define('TIPO', 'Profissional');
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,6 +7,8 @@ define('TIPO', 'Profissional');
     <head>
         <title>Site de serviços de Macapá</title>
         <?php include('head.php'); ?>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
+              rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/categoria_cadastro.css">
         <link rel="stylesheet" href="../assets/css/menu_container_cadastro.css">
         <link rel="stylesheet" href="../assets/css/user_cadastro.css">
@@ -16,60 +17,43 @@ define('TIPO', 'Profissional');
 <body>
 <?php include('menu_container_cadastro.php'); ?>
 <main>
-    <section class="flex-row">
 
-        <article class="formulario" >
-            <article class="titulo-categoria flex-row">
-                <span>Cadastro de Empresa</span>
+        <article class="formulario">
+            <article id="main_container" class="flex-column">
+                <article class="titulo-categoria">
+                    <span >Cadastro de Empresa</span>
+                </article>
+                <form class="form-cadastro" action="adiciona-empresa.php?table='empresas'" method="post">
+                        <table id="table-form">
+                            <tr>
+                                <td><label for="nomeCompleto">Nome Completo</label></td>
+                                <td><input class="cadastro-form" type="text" name="nome" id="nomeCompleto" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">Email</label></td>
+                                <td><input class="cadastro-form" type="email" name="email" id="email" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="senha">Senha</label></td>
+                                <td><input class="cadastro-form" type="password" name="senha" id="senha" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="confSenha">Confirme sua senha</label></td>
+                                <td><input class="cadastro-form" type="password" name="confSenha" id="confSenha"
+                                           required></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-primary">Cadastrar Empresa</button>
+                                </td>
+                            </tr>
+                        </table>
+                </form>
             </article>
-            <form >
-
-                <div class="container">
-                    <table class="table-responsive">
-                        <tr>
-                            <td><label for="cpf">CNPJ da Empresa</label></td>
-                            <td><input class="form-control" type="number" name="cpf" id="cpf" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="nomeCompleto">Logo (Opcional)</label></td>
-                            <td><input class="form-control" type="text" name="nomeCompleto" id="nomeCompleto" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email da Empresa</label></td>
-                            <td><input class="form-control" type="email" name="email" id="email" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="senha">Senha</label></td>
-                            <td><input class="form-control" type="password" name="senha" id="senha" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="confSenha">Confirme sua senha</label></td>
-                            <td><input class="form-control" type="password" name="confSenha" id="confSenha" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="categoria">Categoria</label></td>
-                            <td><input class="form-control" type="text" name="categoria" id="categoria" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="tServico">Tipo de Serviço</label></td>
-                            <td><input class="form-control" type="text" name="tServico" id="tServico" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="descricao">Descriçao do Serviço</label></td>
-                            <td><input class="form-control" type="text" name="descricao" id="descricao" required></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><input type="submit" class="btn btn-primary" name="btnCadastrarProfissional"
-                                       value="Cadastrar Profissional"></td>
-                        </tr>
-                    </table>
-                </div>
-            </form>
+            <?php include('categoria.php'); ?>
         </article>
-      <?php include ('categoria.php');?>
-    </section>
 </main>
 <?php include('planos.php'); ?>
 <?php include('rodape.php'); ?>

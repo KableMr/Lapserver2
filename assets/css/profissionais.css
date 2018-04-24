@@ -1,0 +1,36 @@
+.profissionais{
+    width: 100%;
+    border:0;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.06);
+
+}
+.container-profissional{
+    background-color: white;
+    width: 300px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 5px;
+
+}
+.prof-header > h1{
+    font-size: 1.75em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: rgba(0,0,0,0.8);
+}
+.prof-header > i{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.prof-body > ul{
+    list-style: none;
+    padding: 2px;
+}
+.prof-body ul > li{
+    padding: 5px;
+}
+
+.prof-btn{
+    width: 100%;
+}

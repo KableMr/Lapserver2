@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="../assets/css/estilo_principal.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/profissionais.css">
     <link href="../assets/css/rodape.css" rel="stylesheet">
     <link href="../assets/css/menu_container.css" rel="stylesheet">
     <link href="../assets/css/planos.css" rel="stylesheet">
@@ -25,13 +26,14 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700" rel="stylesheet">
     <link rel="icon" href="../assets/img/logo_servicos02.png">
     <meta name="google-signin-client_id"
           content="383860740692-qfk6eu79i39r4ver50sine807vr0moqp.apps.googleusercontent.com">
-    <script>
-        var w = window.innerWidth;
-        alert(w);
-    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,28 +50,40 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item ">
-            <img style="height:70vh" src="../assets/img/servicos-bg01.jpg" width="100%" alt="image not found"
+            <img class="img_slide" src="../assets/img/slide_bg01.jpg" height="80vh" width="100%" alt="image not found"
                  title='slide show servicos01'>
             <div class="carousel-caption">
                 <!-- info -->
-
+                <div class="container-slide flex-column">
+                    <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
+                    <span class="slide-body">São as categorias que diferencia os serviços. Proporcionando uma grande opção na hora de fazer suas escolhas de profissionais, avaliando os mais competentes de acordo com visões de outros clientes.</span>
+                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                </div>
             </div>
         </div>
 
         <div class="item active">
-            <img style="height:70vh" src="../assets/img/servicos-bg02.jpg" width="100%" alt="image not found"
+            <img class="img_slide"  src="../assets/img/slide_bg02.jpg" height="80vh" width="100%" alt="image not found"
                  title='slide show servicos01'>
             <div class="carousel-caption">
                 <!-- info -->
-
+                <div class="container-slide flex-column-end">
+                    <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
+                    <span class="slide-body">Selecione a melhor categoria para descrever seus serviços.</span>
+                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                </div>
             </div>
         </div>
         <div class="item">
-            <img style="height:70vh" src="../assets/img/servicos-bg03.jpg" width="100%" alt="image not found"
+            <img class="img_slide" src="../assets/img/slide_bg03.jpg" alt="image not found"
                  title='slide show servicos01'>
             <div class="carousel-caption">
                 <!-- info -->
-
+                <div class="container-slide flex-column">
+                    <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
+                    <span class="slide-body">São as categorias que diferencia os serviços. Proporcionando uma grande opção na hora de fazer suas escolhas de profissionais, avaliando os mais competentes de acordo com visões de outros clientes.</span>
+                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                </div>
             </div>
         </div>
     </div>
@@ -88,6 +102,7 @@
 <main>
     <!-- Corpo -->
     <?php include('categoria.php')?>
+    <?php require_once ('profissionais.php')?>
     <!-- Fim Corpo -->
 </main>
 <?php include('planos.php')?>

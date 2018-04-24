@@ -1,49 +1,33 @@
+
 .text-defull {
-    font-family: 'Open sans', sans-serif;
-    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.50em;
     font-weight: 400;
-    color: #FF8F3F;
-
+    color: rgba(0,0,0,0.4);
 }
-
 .text-defull:hover {
     text-decoration: none;
-    color: #FF8F3F;
+    color: rgba(0,0,0,0.7);
 }
-
 /*menu container : style*/
-
 .lista {
     list-style: none;
 }
-
 #main-header {
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
-
 #logo {
     width: 25%;
     padding: 20px;
-
 }
-
-/*
-#logo span a > img{
-    width: 140px;
-    height: 110px;
-}
-*/
 /*busca start*/
 #search {
     width: 43%;
 }
-
 #form-body {
     width: 100%;
     padding: 20px;
 }
-
 #form-body > input[id='pesquisa'] {
     width: 400px;
     border: none;
@@ -65,9 +49,10 @@
 }
 
 #btn-buscar {
+    position: relative;
+    right: 80px;
     padding: 15px 30px;
-    background-color: #FF716A;
-    color: white;
+    color: #152737;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
@@ -89,16 +74,16 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.25em;
     font-weight: 400;
-    color: black;
+    color: #0f9fb4;
 }
 
 #sign ul li a:hover {
     text-decoration: none;
 }
 
-#cadastro {
+#cadastro > span{
     padding: 15px 20px;
-    background-color: #7EADE6;
+    background-color: #0f9fb4;
     border-radius: 3px;
     color: white;
 }
@@ -108,7 +93,7 @@
     display: none;
     width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: #152737;
 }
 
 #menu_normal > ul {
@@ -119,9 +104,9 @@
 #menu_normal ul li > a {
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.15em;
+    font-size: 1.20em;
     font-weight: 300;
-    color: black;
+    color: white;
     transition: .2s ease-in-out;
 }
 
@@ -153,7 +138,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     font-weight: 300;
-    color: black;
+    color: #0f9fb4;
     transition: .2s ease-in-out;
 }
 
@@ -181,6 +166,31 @@
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
 }
+/*começa container-user*/
+#container-user{
+    padding: 10px;
+    width: 20%;
+}
+#container-user > p{
+    font-family: 'Open sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgba(0,0,0,0.5);
+}
+/*termina container-user*/
+
+/*começa setting user*/
+#setting-user{
+    font-size: 1.50em;
+    color: #0f9fb4;
+}
+
+#link-menu-user{
+    list-style: none;
+    display: none;
+    width: 200px;
+}
+/*fim setting user*/
 
 /*end menu nav*/
 @media (max-width: 965px) {

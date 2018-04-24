@@ -1,8 +1,10 @@
 <section id="categoria-container">
     <section id="main_categoria" class="flex-column">
+
         <article id="cat-title" class="flex-row-wrap">
             <span>Categoria</span>
         </article>
+
         <article id="cat-body" class="flex-row-wrap">
             <div>
                 <img src="../assets/img/iconTI.png"/>

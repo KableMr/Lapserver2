@@ -3,7 +3,7 @@
                 <ul>
                     <li><h1>StartUp - Lapserver</h1></li>
                     <li><a href="#">O que é o  projeti?</a></li>
-                    <li><a href="https://github.com/KableMr/Lapserver2">Git e GitHub</a></li>
+                    <li><a href="https://github.com/KableMr/Lapserver2" target="_blank">Git e GitHub</a></li>
                     <li><a href="#">Portifólio</a></li>
                     <li><a href="#">Apoia-se!</a></li>
                 </ul>

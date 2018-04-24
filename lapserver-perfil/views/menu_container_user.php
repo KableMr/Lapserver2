@@ -10,8 +10,8 @@ include('logica-entidade.php');
 <header id="main-header">
     <div id="menu_container" class="flex-row">
         <div id="logo" class="flex-row">
-                    <span class="logo-title">
-                        <a class="text-defull" href="index.php"><span class="copy-style">Serviços AP</span></a>
+                    <span>
+                        <a class="text-defull" href="index.php">ServiçosAP.<span class="copy-style">&copy</span>om</a>
                     </span>
             <span id="menu-nav">
                             <i class="fa fa-bars"></i>
@@ -25,12 +25,12 @@ include('logica-entidade.php');
         <div id="search">
             <form id="form-body" class="flex-row-normal">
                 <input type="search" name="pesquisa" id="pesquisa" placeholder="PESQUISAR"/>
-                <button type="submit" name="btn-buscar" id="btn-buscar"><i class="material-icons">search</i></button>
+                <button type="submit" name="btn-buscar" id="btn-buscar"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <?php if (validUser()) { ?>
             <div id="container-user" class="flex-row-normal">
-                <p class="text-defull"><span class="text-success">Logado como </span><?= $_SESSION['empresa_logada']; ?></p>
+                <p class="text-defull"><span class="text-success">Logado como </span><?= $_SESSION['empresa_logada'] ?></p>
                 <i id="setting-user" class="fa fa-arrow-down"></i>
 
             </div>
@@ -38,13 +38,8 @@ include('logica-entidade.php');
             <div id="sign">
                 <ul class='flex-row lista'>
                     <li class="pesquisa"><i class="fa fa-search"></i></li>
-
-                    <li id="classe-login">
-                        <a href="#info" id="entrar">Entrar</a>
-                    </li>
-                    <li>
-                        <a href="#info" id="cadastro"><span>Cadastrar</span></a>
-                    </li>
+                    <li><a href="#info" id="entrar">Entrar</a></li>
+                    <li><a href="#info" id="cadastro"><span>Cadastrar</span></a></li>
                 </ul>
             </div>
         <?php } ?>
@@ -63,10 +58,9 @@ include('logica-entidade.php');
     </div>
 </header>
 
-
 <div id="modal">
     <div id="modal-body">
-        <!-- corpo Login -->
+        <!-- corpo -->
         <form action="login.php" method="post">
             <div class="container">
                 <table>
@@ -85,7 +79,7 @@ include('logica-entidade.php');
                         <td><label for="entidade">Entrar como!?</label></td>
                         <td><select name="entidades" id="entidade" class="form-control">
                                 <option value="empresas">Empresa</option>
-                                <option value="profissionais">Profissional</option>
+                                <option value="profissional">Profissional</option>
                             </select></td>
                     </tr>
                     <tr>
@@ -97,10 +91,10 @@ include('logica-entidade.php');
     </div>
 
 </div>
+
 <div id="modal-cadastro">
     <div id="modal-body">
-
-        <!-- corpo cadastro-->
+        <!-- corpo -->
         <form action="cadastro.php" method="post">
             <div class="container">
                 <table>
@@ -111,7 +105,7 @@ include('logica-entidade.php');
                         <td><label for="entidade">Entrar como!?</label></td>
                         <td><select name="entidades" id="entidade" class="form-control">
                                 <option value="empresas">Empresa</option>
-                                <option value="profissionais">Profissional</option>
+                                <option value="profissional">Profissional</option>
                             </select></td>
                     </tr>
                     <tr>
@@ -122,7 +116,6 @@ include('logica-entidade.php');
                 </table>
             </div>
         </form>
-
     </div>
 
 </div>

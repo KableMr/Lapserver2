@@ -24,7 +24,7 @@ if (isset($_SESSION["opcao"]) && !empty($_SESSION["opcao"])) {
         <div id="search">
             <form id="form-body" class="flex-row">
                 <input type="search" name="pesquisa" id="pesquisa" placeholder="BUSCAR"/>
-                <button type="submit" name="btn-buscar" id="btn-buscar">Buscar</button>
+                <button type="submit" name="btn-buscar" id="btn-buscar"><i class="fa fa-search"></i></button>
             </form>
         </div>
 <?php if ($label) { ?>
