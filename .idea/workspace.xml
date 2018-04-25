@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4e7efc5-73d7-4db8-8bae-9aecf280dc37" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/profissionais.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/slide_bg01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/slide_bg02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/slide_bg03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapserver-perfil/assets/css/perfil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapserver-perfil/assets/img/salomao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapserver-perfil/views/menu_container_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lapserver-perfil/views/perfil-user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/adiciona-empresa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/adiciona-profissional.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/banco-emrpesa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/banco-login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/banco-profissional.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/cadastro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/conecta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/logica-entidade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/profissionais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lapserver2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lapserver2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categoria.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categoria.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/categoria_cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/categoria_cadastro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/estilo_principal.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/estilo_principal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/menu_container.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/menu_container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/menu_container_cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/menu_container_cadastro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/user_cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/user_cadastro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/categoria.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/categoria.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu_container.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu_container.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/menu_container_cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu_container_cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/rodape.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/rodape.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user_cadastro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user_empresa.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user_empresa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user_profissional.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user_profissional.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -211,14 +173,20 @@
       <workItem from="1523513339935" duration="504000" />
       <workItem from="1524072260984" duration="987000" />
       <workItem from="1524345095543" duration="47000" />
+      <workItem from="1524611435157" duration="259000" />
+      <workItem from="1524613126990" duration="300000" />
+      <workItem from="1524613918515" duration="477000" />
+      <workItem from="1524615414244" duration="588000" />
+      <workItem from="1524662922332" duration="167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44055000" />
+    <option name="totallyTimeSpent" value="45846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="783" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25714287" />
       <window_info anchor="bottom" id="TODO" order="10" />
