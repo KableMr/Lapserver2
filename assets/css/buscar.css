@@ -1,0 +1,12 @@
+#bucar-container{
+    width: 100%;
+    background-color: rgba(0,0,0,0.02);
+padding: 10px;
+}
+
+#buscar-content > h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1.75em;
+    color: rgba(0,0,0,0.6);
+}

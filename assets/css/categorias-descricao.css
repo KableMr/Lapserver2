@@ -1,0 +1,35 @@
+.text-categoria{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.25px;
+    color: rgba(0,0,0,0.4);
+}
+#categoria-header{
+    width: 100%;
+}
+#container-header-categoria{
+    padding: 20px;
+}
+#lista-categoria-descricao{
+    padding: 10px;
+}
+#lista-categoria-descricao > li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.img-categoria-descricao{
+    width: 100px;
+    height: 100px;
+}
+.secao-header, .secao-corpo{
+     padding: 10px;
+ }
+
+@media (max-width: 585px){
+    #lista-categoria-descricao > li{
+        flex-direction: column;
+    }
+}

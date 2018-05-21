@@ -19,7 +19,7 @@ $(function () {
     $(".container-slide").animate({left: '-120px'});
 
     $("#setting-user").click(function () {
-        $("#link-menu-user").slideToggle();
+        $("#modal").slideToggle();
     });
 
 });

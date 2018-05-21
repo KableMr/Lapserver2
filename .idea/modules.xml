@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Lapserver-perfil/.idea/AdminLTE.iml" filepath="$PROJECT_DIR$/../Lapserver-perfil/.idea/AdminLTE.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Lapserver2.iml" filepath="$PROJECT_DIR$/.idea/Lapserver2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../alura-typer/.idea/alura-typer.iml" filepath="$PROJECT_DIR$/../alura-typer/.idea/alura-typer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../teste/.idea/teste.iml" filepath="$PROJECT_DIR$/../teste/.idea/teste.iml" />
     </modules>
   </component>
 </project>

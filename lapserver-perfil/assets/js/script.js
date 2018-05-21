@@ -1,12 +1,12 @@
-$(function(){   
-    $('#menu-nav').click(function(){
-        $("#menu_normal").slideToggle();
+$(function () {
+    $(".container-modal ul > li").hover(function () {
+        $(this).animate({"text-indent" : "5px"});
+    }, function(){
+        $(this).animate({"text-indent" : "0px"});
     });
-    $('#menu-nav-mobile').click(function(){
-        $("#menu-mobile").slideToggle();
-    });
-    $("#entrar").click(function(){
-        $("#modal").slideToggle();
+
+    $("#modal-funcoes-conteiner").click(function () {
+       $("#modal-funcoes").slideToggle();
     });
 
 });

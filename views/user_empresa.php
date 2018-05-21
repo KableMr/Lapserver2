@@ -21,9 +21,9 @@ session_start();
         <article class="formulario">
             <article id="main_container" class="flex-column">
                 <article class="titulo-categoria">
-                    <span >Cadastro de Empresa</span>
+                    <span>Insira suas informações</span>
                 </article>
-                <form class="form-cadastro" action="adiciona-empresa.php?table='empresas'" method="post">
+                <form class="form-cadastro" action="../controller/efetuaCadastrar.php" method="post">
                         <table id="table-form">
                             <tr>
                                 <td><label for="nomeCompleto">Nome Completo</label></td>
@@ -43,7 +43,16 @@ session_start();
                                 <td><input class="cadastro-form" type="password" name="confSenha" id="confSenha"
                                            required></td>
                             </tr>
-
+                            <tr>
+                                <td>Cadastrar como</td>
+                                <td>
+                                    <select name="entidades" class="form-control">
+                                        <option value="profissionais">Profissional</option>
+                                        <option value="empresas">Empresas</option>
+                                        <option value="usuarios">Usuário</option>
+                                    </select>
+                                </td>
+                            </tr>
                             <tr>
                                 <td colspan="2">
                                     <button type="submit" class="btn btn-primary">Cadastrar Empresa</button>

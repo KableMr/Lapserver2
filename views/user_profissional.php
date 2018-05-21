@@ -27,7 +27,7 @@ session_start();
                 <article class="titulo-categoria">
                     <span>Cadastro de Profissional</span>
                 </article>
-                <form class="form-cadastro" action="adiciona-profissional.php" method="post">
+                <form class="form-cadastro"  method="post">
 
                     <table id="table-form">
                         <tr>

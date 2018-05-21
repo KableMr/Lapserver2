@@ -118,6 +118,18 @@
 }
 
 /*fim modal*/
+/*começo modal autenticacao*/
+#modal-autenticacao{
+    position: relative;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.0);
+    padding: 20px;
+}
+#modal-auth-container{
+    width: 30%;
+    padding: 20px;
+}
+/*fim modal autenticacao*/
 @media (max-width: 500px) {
     .item  {
         height: 300px;

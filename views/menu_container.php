@@ -1,9 +1,12 @@
 <?php
-include('logica-entidade.php');
+session_start();
+require_once('logica-entidade.php');
 ?>
 <!DOCTYPE html>
 <html>
-
+<head>
+    <?php require_once ("head.php");?>
+</head>
 <body>
 
 <!-- header menu -->
@@ -23,17 +26,27 @@ include('logica-entidade.php');
                         </span>
         </div>
         <div id="search">
-            <form id="form-body" class="flex-row-normal">
+            <form method="post" id="form-body" class="flex-row-normal">
+
                 <input type="search" name="pesquisa" id="pesquisa" placeholder="PESQUISAR"/>
                 <button type="submit" name="btn-buscar" id="btn-buscar"><i class="material-icons">search</i></button>
             </form>
         </div>
         <?php if (validUser()) { ?>
-            <div id="container-user" class="flex-row-normal">
-                <p class="text-defull"><span class="text-success">Logado como </span><?= $_SESSION['empresa_logada']; ?></p>
-                <i id="setting-user" class="fa fa-arrow-down"></i>
+            <div id="container-user" class="flex-row">
+                <span class="text-capitalize text-defull-lg"><?= $_SESSION['empresa_logada']; ?></span>
+                <i id="setting-user" class="fa fa-ellipsis-v"></i>
+                <div id="modal">
+                    <div id="modal-body">
+                        <!-- corpo Login -->
+                        <ul id="link-menu-user" class="flex-column">
+                            <li><a href="../../Lapserver-perfil/index.php">Meu perfil</a></li>
+                            <li><a href="./logout.php">Sair</a></li>
+                        </ul>
+                    </div>
 
-            </div>
+                </div>
+
         <?php } else { ?>
             <div id="sign">
                 <ul class='flex-row lista'>
@@ -43,7 +56,7 @@ include('logica-entidade.php');
                         <a href="#info" id="entrar">Entrar</a>
                     </li>
                     <li>
-                        <a href="#info" id="cadastro"><span>Cadastrar</span></a>
+                        <a href="user_empresa.php" id="cadastro"><span>Cadastrar</span></a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +80,7 @@ include('logica-entidade.php');
 <div id="modal">
     <div id="modal-body">
         <!-- corpo Login -->
-        <form action="login.php" method="post">
+        <form action="../controller/efetuaLogin.php" method="post">
             <div class="container">
                 <table>
                     <tr>
@@ -127,12 +140,6 @@ include('logica-entidade.php');
 
 </div>
 
-<div id="modal-usuario">
-    <ul id="link-menu-user" class="flex-column">
-        <li><a href="../lapserver-perfil/views/perfil-user.php">Meu perfil</a></li>
-        <li><a href="./logout.php">Sair</a></li>
-    </ul>
-</div>
 
 <div id="menu-mobile">
     <div id="menu-mobile-itens">
@@ -143,7 +150,7 @@ include('logica-entidade.php');
                     <ul class='flex-row lista'>
                         <li class="pesquisa"><i class="fa fa-search"></i></li>
                         <li><a href="#info" id="entrar">Entrar</a></li>
-                        <li><a href="cadastro.php" id="cadastro"><span>Cadastrar</span></a></li>
+                        <li><a href="user_empresa.php" id="cadastro"><span>Cadastrar</span></a></li>
                     </ul>
                 </div>
             </li>
@@ -158,5 +165,12 @@ include('logica-entidade.php');
 </div>
 </body>
 </html>
+<div id="modal-usuario">
+    <ul id="link-menu-user" class="flex-column">
+        <li><a href="../../Lapserver-perfil/index.php">Meu perfil</a></li>
+        <li><a href="./logout.php">Sair</a></li>
+    </ul>
+</div>
+
 
         

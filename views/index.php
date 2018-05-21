@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Site de serviços de Macapá</title><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link href="../assets/css/estilo_principal.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/profissionais.css">
-    <link href="../assets/css/rodape.css" rel="stylesheet">
-    <link href="../assets/css/menu_container.css" rel="stylesheet">
-    <link href="../assets/css/planos.css" rel="stylesheet">
-    <link href="../assets/css/categoria.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/user_cadastro.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="assets/css/normalize.min.css" rel="stylesheet">
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700" rel="stylesheet">
-    <link rel="icon" href="../assets/img/logo_servicos02.png">
-    <meta name="google-signin-client_id"
-          content="383860740692-qfk6eu79i39r4ver50sine807vr0moqp.apps.googleusercontent.com">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <?php require_once("head.php");?>
 </head>
 
 <body>
-<?php include('menu_container.php'); ?>
+<?php require_once('menu_container.php'); ?>
+
+<?php if (isset($_SESSION['sucesso'])) { ?>
+    <div id="modal-autenticacao" class="flex-row-normal">
+        <div id="modal-auth-container" class="flex-row alert-success">
+            <span><?=$_SESSION['sucesso'];?></span>
+            <a href="../controller/autenticacao.php?desable=1"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+<?php } else if (isset($_SESSION['danger'])) { ?>
+    <div id="modal-autenticacao" class="flex-row-normal">
+        <div id="modal-auth-container" class="flex-row alert-danger">
+            <span><?=$_SESSION['danger'];?></span>
+            <a href="../controller/autenticacao.php?desable=0"><i class="fa fa-times"></i></a>
+        </div>
+    </div>
+<?php } ?>
+
+
 <!-- slide carousel -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -57,20 +43,22 @@
                 <div class="container-slide flex-column">
                     <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
                     <span class="slide-body">São as categorias que diferencia os serviços. Proporcionando uma grande opção na hora de fazer suas escolhas de profissionais, avaliando os mais competentes de acordo com visões de outros clientes.</span>
-                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                    <span class="flex-row saiba_mais"><a href="#saiba">Registra-se gratuitamente</a> <i
+                                class="fa fa-chevron-right"></i></span>
                 </div>
             </div>
         </div>
 
         <div class="item active">
-            <img class="img_slide"  src="../assets/img/slide_bg02.jpg" height="80vh" width="100%" alt="image not found"
+            <img class="img_slide" src="../assets/img/slide_bg02.jpg" height="80vh" width="100%" alt="image not found"
                  title='slide show servicos01'>
             <div class="carousel-caption">
                 <!-- info -->
                 <div class="container-slide flex-column-end">
                     <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
                     <span class="slide-body">Selecione a melhor categoria para descrever seus serviços.</span>
-                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                    <span class="flex-row saiba_mais"><a href="#saiba">Registra-se gratuitamente</a> <i
+                                class="fa fa-chevron-right"></i></span>
                 </div>
             </div>
         </div>
@@ -82,7 +70,8 @@
                 <div class="container-slide flex-column">
                     <span class="slide-title">Conheça as nossas categorias e suas vantagens</span>
                     <span class="slide-body">São as categorias que diferencia os serviços. Proporcionando uma grande opção na hora de fazer suas escolhas de profissionais, avaliando os mais competentes de acordo com visões de outros clientes.</span>
-                    <span class="flex-row saiba_mais"><a  href="#saiba">Registra-se gratuitamente</a> <i class="fa fa-chevron-right"></i></span>
+                    <span class="flex-row saiba_mais"><a href="#saiba">Registra-se gratuitamente</a> <i
+                                class="fa fa-chevron-right"></i></span>
                 </div>
             </div>
         </div>
@@ -101,12 +90,13 @@
 
 <main>
     <!-- Corpo -->
-    <?php include('categoria.php')?>
-    <?php require_once ('profissionais.php')?>
+    <?php require_once('categoria.php'); ?>
+    <?php require_once('profissionais.php'); ?>
+    <?php require_once('empresas.php'); ?>
     <!-- Fim Corpo -->
 </main>
-<?php include('planos.php')?>
-<?php include('rodape.php'); ?>
+<?php require_once('planos.php') ?>
+<?php require_once('rodape.php'); ?>
 
 </body>
 </html>

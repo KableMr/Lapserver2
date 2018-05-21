@@ -9,6 +9,18 @@
     text-decoration: none;
     color: rgba(0,0,0,0.7);
 }
+.text-defull-sm {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgba(0,0,0,0.4);
+}
+.text-defull-lg {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: rgba(0,0,0,0.4);
+}
 /*menu container : style*/
 .lista {
     list-style: none;
@@ -50,7 +62,7 @@
 
 #btn-buscar {
     position: relative;
-    right: 80px;
+    right: 90px;
     padding: 15px 30px;
     color: #152737;
     text-align: center;
@@ -168,27 +180,28 @@
 }
 /*começa container-user*/
 #container-user{
+    width:20%;
     padding: 10px;
-    width: 20%;
-}
-#container-user > p{
-    font-family: 'Open sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    color: rgba(0,0,0,0.5);
+    border:1px solid black;
 }
 /*termina container-user*/
 
 /*começa setting user*/
 #setting-user{
-    font-size: 1.50em;
+    font-size: 1em;
     color: #0f9fb4;
 }
-
-#link-menu-user{
-    list-style: none;
+#modal-usuario{
     display: none;
     width: 200px;
+    background-color: rgba(0,0,0,0.0);
+    border:1px solid black;
+}
+#link-menu-user{
+    list-style: none;
+    width: 100%;
+    border:1px solid black;
+
 }
 /*fim setting user*/
 
