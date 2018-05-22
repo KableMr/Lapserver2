@@ -32,8 +32,16 @@ function InserirEntidade($pdo, UsuarioDAO $usuario){
     return $resultado;
 }
 
-function AtualizarDados($pdo, $id, $nome, $email, $localizacao, $formacao, $bio, $conhecimento_id, $categoria_id, $fotoPerfil, $telefone){
-    $query = "update profissionais set nome = '{$nome}', email = '{$email}', localizacao = '{$localizacao}', formacao = '{$formacao}', bio = '{$bio}', conhecimento_id = {$conhecimento_id}, categoria_id = {$categoria_id}, arquivo_id = '{$fotoPerfil}' , telefone = '{$telefone}' where id = {$id}";
+function AtualizarDados($pdo, $id, $table, $nome, $email, $localizacao, $formacao, $bio, $conhecimento, $categoria_id, $fotoPerfil, $telefone){
+    $query = "update $table set nome = '{$nome}', email = '{$email}', localizacao = '{$localizacao}', formacao = '{$formacao}', bio = '{$bio}', area_conhecimento = '{$conhecimento}', categoria_id = {$categoria_id}, arquivo_id = '{$fotoPerfil}' , telefone = '{$telefone}' where id = {$id}";
     $resultado = $pdo->query($query);
     return $resultado;
+}
+
+
+function validaPesquisa($pdo, $palavraPasse){
+    $query = "select * from profissionais where area_conhecimento like '%{$palavraPasse}%'";
+    $resultado = $pdo->query($query);
+    $listas = $resultado->fetchAll(PDO::FETCH_OBJ);
+    return $listas;
 }

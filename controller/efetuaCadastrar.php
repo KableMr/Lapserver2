@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once ('../models/Banco.php');
 require_once ('../models/UsuarioDAO.php');
 require_once ('../models/Entidade.php');
@@ -10,7 +9,6 @@ $usuario->table = $_POST['entidades'];
 $usuario->nome = $_POST['nome'];
 $usuario->email = $_POST['email'];
 $usuario->senha = $_POST['senha'];
-
 
 $cadastro = InserirEntidade($pdo, $usuario);
 

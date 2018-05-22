@@ -26,10 +26,9 @@ require_once('logica-entidade.php');
                         </span>
         </div>
         <div id="search">
-            <form method="post" id="form-body" class="flex-row-normal">
-
-                <input type="search" name="pesquisa" id="pesquisa" placeholder="PESQUISAR"/>
-                <button type="submit" name="btn-buscar" id="btn-buscar"><i class="material-icons">search</i></button>
+            <form method="post" action="resultado-busca.php" id="form-body" class="flex-row-normal">
+                <input type="search" name="pesquisar" id="pesquisa" placeholder="PESQUISAR"/>
+                <button type="submit" id="btn-buscar"><i class="material-icons">search</i></button>
             </form>
         </div>
         <?php if (validUser()) { ?>
@@ -67,7 +66,7 @@ require_once('logica-entidade.php');
             <ul id="animacao-menu" class="flex-row-wrap">
                 <li><a href='#categoria-container'>Categoria</a></li>
                 <li><a href='#planos'>Planos</a></li>
-                <li><a href='#empresa'>Empresas</a></li>
+                <li><a href='#empresas'>Empresas</a></li>
                 <li><a href='#profissionais'>Profissionais</a></li>
                 <li><a href='#quemsomos'>Quem somos?</a></li>
                 <li><a href='#suporte'>Suporte</a></li>
@@ -99,6 +98,8 @@ require_once('logica-entidade.php');
                         <td><select name="entidades" id="entidade" class="form-control">
                                 <option value="empresas">Empresa</option>
                                 <option value="profissionais">Profissional</option>
+                                <option value="usuarios">Usuário</option>
+                                <option value="usuarios">Usuário</option>
                             </select></td>
                     </tr>
                     <tr>
@@ -125,6 +126,7 @@ require_once('logica-entidade.php');
                         <td><select name="entidades" id="entidade" class="form-control">
                                 <option value="empresas">Empresa</option>
                                 <option value="profissionais">Profissional</option>
+                                <option value="usuarios">Usuário</option>
                             </select></td>
                     </tr>
                     <tr>

@@ -5,27 +5,39 @@ require_once('../models/Banco.php');
 $pdo = Conecta();
 $empresas = ListarEntidades($pdo, 'empresas');
 ?>
-<div id="profissionais" class="profissionais flex-column-end">
-    <h1 class="text-center text-defull">Vagas para as empresas</h1>
-
-    <div class=" flex-row-wrap">
-
-        <?php foreach ($empresas as $e) : ?>
-            <div class="card" style="width: 400px">
-                <div class="card-header text-capitalize">
-                    <?=$e->nome;?>
-                </div>
-                <div class="card-body" style="padding: 10px;">
-                    <h5 class="card-title">Contato</h5>
-                    <p class="card-text"><?=$e->email;?></p>
-                </div>
-                <div class="card-body" style="padding: 10px;">
-                    <h5 class="card-title">Descrição</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#?id=<?=$e->id;?>" class="btn btn-primary">SAIBA MAIS</a>
-                </div>
-            </div>
-        <?php endforeach; ?>
-
-    </div>
-</div>
+<section id="empresas">
+<header id="categoria-header">
+    <article id="container-header-categoria">
+        <h2 class="text-center">Empresas em destaque</h2>
+        <section id="cat-header" class="flex-row">
+            <ul id="lista-categoria-descricao" class="lista">
+                <?php foreach ($empresas as $item) : ?>
+                    <li>
+                        <section class="secao-header" class="flex-column">
+                            <h4 class="text-defull text-capitalize"><?= $item->nome ?></h4>
+                            <img class="img-categoria-descricao"
+                                 src="../../Lapserver-perfil/arquivo.php?arquivo_id=<?php echo $item->arquivo_id; ?>"/>
+                        </section>
+                        <section class="secao-corpo flex-row-between-wrap" style="width: 70%">
+                            <div class="flex-column-end">
+                                <span class="text-defull-lg"><?= $item->bio ?></span>
+                                <span class="text-defull-sm"><?= $item->area_conhecimento ?></span>
+                                <span class="text-defull-sm">Contato: <?= $item->email ?>
+                                    / <?= $item->telefone ?> </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <form action="notificar.php" method="post">
+                                         <input type="hidden" name="id" value="<?=$item->id?>">
+                                         <input type="submit" value="Notificar" class="btn btn-primary">
+                                    </form>
+                                </span>
+                            </div>
+                        </section>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    </article>
+</header>
+</section>

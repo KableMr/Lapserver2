@@ -10,12 +10,12 @@ session_start();
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css"
               rel="stylesheet">
         <link rel="stylesheet" href="../assets/css/categoria_cadastro.css">
-        <link rel="stylesheet" href="../assets/css/menu_container_cadastro.css">
+
         <link rel="stylesheet" href="../assets/css/user_cadastro.css">
     </head>
 </head>
 <body>
-<?php include('menu_container_cadastro.php'); ?>
+<?php include('menu_container.php'); ?>
 <main>
 
         <article class="formulario">
