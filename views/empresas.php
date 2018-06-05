@@ -27,8 +27,9 @@ $empresas = ListarEntidades($pdo, 'empresas');
                             </div>
                             <div>
                                 <span>
-                                    <form action="notificar.php" method="post">
+                                    <form action="contrato.php" method="post">
                                          <input type="hidden" name="id" value="<?=$item->id?>">
+                                         <input type="hidden" name="entidade" value="empresas">
                                          <input type="submit" value="Notificar" class="btn btn-primary">
                                     </form>
                                 </span>

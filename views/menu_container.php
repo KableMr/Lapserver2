@@ -99,7 +99,6 @@ require_once('logica-entidade.php');
                                 <option value="empresas">Empresa</option>
                                 <option value="profissionais">Profissional</option>
                                 <option value="usuarios">Usuário</option>
-                                <option value="usuarios">Usuário</option>
                             </select></td>
                     </tr>
                     <tr>
@@ -169,7 +168,7 @@ require_once('logica-entidade.php');
 </html>
 <div id="modal-usuario">
     <ul id="link-menu-user" class="flex-column">
-        <li><a href="../../Lapserver-perfil/index.php">Meu perfil</a></li>
+        <li><a href="./Lapserver2/Lapserver-perfil/index.php">Meu perfil</a></li>
         <li><a href="./logout.php">Sair</a></li>
     </ul>
 </div>

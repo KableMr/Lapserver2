@@ -4,6 +4,7 @@ require_once ('../models/UsuarioDAO.php');
 require_once ('../models/Entidade.php');
 
 $pdo = Conecta();
+
 $usuario = new UsuarioDAO();
 $usuario->table = $_POST['entidades'];
 $usuario->nome = $_POST['nome'];

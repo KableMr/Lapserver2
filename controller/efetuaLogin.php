@@ -23,6 +23,6 @@ if($loginEntidade) {
         $_SESSION['id']=$l['id'];
     }
 }else{
-    echo "deu muito errado meu camarada!";
+    echo "[erro ao autenticar ao servidor!]";
 }
 die();

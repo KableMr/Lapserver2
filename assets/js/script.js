@@ -22,4 +22,13 @@ $(function () {
         $("#modal").slideToggle();
     });
 
+    $("#botao-notificar").click(function(){
+        $(".modal-container").slideToggle();
+        $("#erro-notifica").slideToggle();
+    });
+
+    $("#fechar-notifica").click(function(){
+        $(".modal-container").slideToggle();
+    });
+
 });

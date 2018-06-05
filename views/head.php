@@ -6,6 +6,7 @@
 <meta name="keywords" content="">
 <link href="../assets/css/estilo_principal.css" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/profissionais.css">
+<link rel="stylesheet" href="../assets/css/profile.css">
 <link href="../assets/css/rodape.css" rel="stylesheet">
 <link href="../assets/css/menu_container.css" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/categorias-descricao.css">
